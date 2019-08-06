@@ -2,7 +2,24 @@ package com.education.dao;
 
 import com.education.bean.Order;
 
+import java.util.List;
+
 public interface OrderMapper {
+
+    public Order timetable(String starttime,int studentid);
+
+
+
+
+
+
+
+
+
+
+
+
+
     int deleteByPrimaryKey(Integer oid);
 
     int insert(Order record);

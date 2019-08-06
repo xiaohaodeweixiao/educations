@@ -20,6 +20,22 @@
     oid, starttime, endtime, classaddress, content, price, remark, teacherid, studentid, 
     studentevaluate, teacherevaluate, orderstatic, ordertype
   </sql>
+
+
+
+
+  <select id="timetable">
+    SELECT * FROM `order`
+    where starttime=#{starttime}
+    and studentid=#{studentid}
+  </select>
+
+
+
+
+
+
+
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />

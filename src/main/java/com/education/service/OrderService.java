@@ -2,7 +2,24 @@ package com.education.service;
 
 import com.education.bean.Order;
 
+import java.util.List;
+
 public interface OrderService {
+
+
+    public Order timetable(String starttime, int studentid);
+
+
+
+
+
+
+
+
+
+
+
+
     int deleteByPrimaryKey(Integer oid);
 
     int insert(Order record);
